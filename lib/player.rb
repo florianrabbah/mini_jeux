@@ -16,8 +16,7 @@ end
 def gets_damage(damage)
   @life_points -= damage
   if @life_points <= 0
-     @life_points = 0
-    puts "le joueur #{@name} a été tué"
+     puts "le joueur #{@name} a été tué"
   end
 
 

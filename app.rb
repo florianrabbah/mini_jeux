@@ -13,12 +13,13 @@ player2.show_state
 
 puts "passons à la phase d'attack"
 
-while player1.life_points > 0 && player2.life_points > 0
+while player1.life_points >= 0 && player2.life_points >= 0
   player1.attacks(player2)
-  break if player2.life_points < 0
+  player2.attacks(player1)
+  break if player2.life_points  >= 0
 end
 
-player2.attacks(player1)
+
 
 #binding.pry
 #puts "end of file"
